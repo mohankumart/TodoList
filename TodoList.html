@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Todo List</title>
+		<link rel="stylesheet" href="todo.css"/>
+		<script src="utils.js"></script>
+		<script src="todo.js"></script>
+		<script>
+			function init(){
+				//todo initialization
+				var config = {
+					"id":"todolist",
+					"formId":"todoform",
+					"onAdd":function(){
+						console.log("Todo Item is added");
+					},
+					"onDelete":function(){
+						console.log("Todo Item is deleted");
+					}
+				};
+				var todolist = new TodoList(config);
+			}
+		</script>
+	</head>
+	<body onload="init()">
+		<!-- Todo List Markup Start-->
+		<div class="page-tran-holder">
+			<div id="todolist"></div>
+			<div id="todoform"></div>
+		</div>
+		<!-- Todo List Markup End-->
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+

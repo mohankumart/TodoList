@@ -1,0 +1,286 @@
+
+/*Start page transistion styles*/
+.page-tran-holder{
+	width:800px;
+	height:550px;
+	position:relative;
+	margin:auto;
+	margin-top:50px;
+	border-radius:10px;
+	border:solid 10px gainsboro;
+}
+
+.page-tran {
+	width:100%;
+	height:100%;
+	visibility:hidden;
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+
+
+.page-tran-todolist {
+	padding:20px 20px;
+	background-color:snow;	
+	border:solid 5px rosybrown;
+}
+
+.page-tran-todolistform {
+	padding:20px 0px;
+	background-color:beige;
+	border:solid 5px darkkhaki;
+}
+
+.page-tran-rotatePageIn {
+	-webkit-transform-origin: 100% 50%;
+	-webkit-animation: rotatePageIn .8s both ease;
+	-moz-transform-origin: 100% 50%;
+	-moz-animation: rotatePageIn .8s both ease;
+	transform-origin: 100% 50%;
+	animation: rotatePageIn .8s both ease;
+}
+
+@-webkit-keyframes rotatePageIn {
+	from { opacity: .3; -webkit-transform: translateX(-100%) rotateY(90deg); }
+}
+@-moz-keyframes rotatePageIn {
+	from { opacity: .3; -moz-transform: translateX(-100%) rotateY(90deg); }
+}
+@keyframes rotatePageIn {
+	from { opacity: .3; transform: translateX(-100%) rotateY(90deg); }
+}
+
+
+.page-tran-rotatePageOut {
+	-webkit-transform-origin: 0% 50%;
+	-webkit-animation: rotatePageOut .8s both ease;
+	-moz-transform-origin: 0% 50%;
+	-moz-animation: rotatePageOut .8s both ease;
+	transform-origin: 0% 50%;
+	animation: rotatePageOut .8s both ease;
+}
+
+
+@-webkit-keyframes rotatePageOut {
+	to { opacity: .3; -webkit-transform: translateX(100%) rotateY(-90deg); }
+}
+@-moz-keyframes rotatePageOut {
+	to { opacity: .3; -moz-transform: translateX(100%) rotateY(-90deg); }
+}
+@keyframes rotatePageOut {
+	to { opacity: .3; transform: translateX(100%) rotateY(-90deg); }
+}
+
+
+.page-tran-ontop{
+	z-index:999;
+}
+
+.page-tran-current{
+	visibility:visible;
+}
+
+/*End Page transistion styles*/
+
+
+
+/*todo form styles*/
+*{
+	webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body,div,ul,li {
+	margin:0px;
+	padding:0px;
+}
+input, textarea, select{
+	display:block;
+	margin:3px 0px;
+	border-radius:4px;
+	padding:5px 5px;
+	border:solid 1px #ccc;
+	background-color:floralwhite;
+}
+
+.stack-form select {
+	background-color:#fff;
+}
+
+.stack-form label{
+	display:block;
+	margin:10px 0px 3px 0px;
+}
+
+fieldset {
+	border:0px;
+}
+.stack-form legend {
+	display:block;
+	width:100%;
+	margin-bottom:10px;
+	color:#333;
+	border-bottom:1px solid #e5e5e5;
+	font-size:22px;
+	font-family:cursive;
+	font-weight:bold;
+}
+.todo-button{
+	background-color:#BDB76B;
+	color:#fff;
+	text-decoration:none;
+	padding:8px 24px;
+	border-radius:2px;
+	border:0px;
+}
+.cancel{
+	margin:10px 0px;
+}
+.save,.update{
+	margin-left:10px;
+	margin-right:0px;
+	margin-bottom:10px;
+	margin-top:10px;
+}
+
+.update {
+	display:none;
+}
+
+.todolistitem{
+	
+}
+
+.page-tran-todolist{
+	width:100%;
+}
+
+.padleft20{
+	padding-left:20px;
+}
+
+.padright20{
+	padding-right:20px;
+}
+
+.padtop0{
+	padding-top:0px;
+}
+
+.padbottom0{
+	padding-bottom:0px;
+}
+
+h2{
+	border-bottom:1px solid #e5e5e5;
+	font-family:cursive;
+	font-weight:bold;
+	font-size:22px;
+}
+
+
+
+
+.container{
+	background-color:lightyellow;
+	border:solid 1px #ccc;
+}
+
+
+.cf:before,
+.cf:after {
+	content: " "; /* 1 */
+	display: table; /* 2 */
+}
+
+.cf:after {
+	clear: both;
+}
+
+/*Todo List styles*/
+.section{
+	float:left;
+	display:inline;
+	padding:10px 10px;
+	width:200px;
+	height:50px;
+	padding:0px;
+}
+.actions {
+	list-style:none;
+	height:50px;
+}
+.action-item {
+	float:left;
+	height:50px;
+	padding:10px 10px;
+}
+
+.taskstatus {
+	width:20px;
+	background:orange;
+}
+
+.tasktext{
+	display:block;
+	padding:15px 10px;
+}
+
+.taskdate-view{
+	display:block;
+	padding:15px 10px;
+}
+
+.taskactions{
+	width:220px;
+}
+
+.taskmain{
+	width:340px;
+}
+
+.taskdate{
+	width:100px;
+}
+
+.todolistbody{
+	/*padding:0px 20px;*/
+	height:350px;
+	overflow:auto;
+}
+
+.todolistheader{
+	/*padding:0px 20px;*/
+}
+
+.mainbuttons{
+	height:50px;
+	background:brown;
+}
+
+.task-inprogress{
+	font-style:italic;
+}
+
+.task-done{
+	text-decoration:line-through;
+}
+
+.task-new {
+	font-style:normal;
+}
+
+.task-high{
+	background-color:red;
+}
+
+.task-medium{
+	background-color:orange;
+}
+
+.task-low{
+	background-color:greenyellow;
+}
+
