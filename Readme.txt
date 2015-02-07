@@ -36,7 +36,7 @@ css:
 Html:
 	user need to write minimum html code.Html is written as per html5 web standards.
 
-
+Used localStorage for persistence of todo items.
 Testing:
 
 TodoList is tested in Chrome 32, Firefox 26, IE 11.	
